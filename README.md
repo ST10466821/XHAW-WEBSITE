@@ -1,6 +1,9 @@
 Sergio Florenca XHAW Group 2 Group (S&P)(Sergio,Joshua,Philip)
 ST10466821
 
+### GitHub Link
+https://github.com/ST10466821/XHAW-WEBSITE.git
+
 
 # Course Website
 A responsive web application for online course management and enrollment, featuring course catalogs, user registration, and payment processing.
