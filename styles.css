@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2a2a2a;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #d3d3d3;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.header {
+    background-color: #888;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.nav-btn {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 2px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.nav-btn:hover, .nav-btn.active {
+    background-color: #555;
+}
+
+.purchase-btn {
+    background-color: #555 !important;
+}
+
+.mission-section {
+    background-color: #777;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 40px;
+}
+
+.courses-grid {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.course-category {
+    flex: 1;
+}
+
+.category-header {
+    background-color: #777;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.category-header.clickable {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category-header.clickable:hover {
+    background-color: #666;
+}
+
+/* Course Summary Styles */
+.course-summary {
+    background-color: #777;
+    color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.summary-header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.summary-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.summary-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.summary-content ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.summary-content li {
+    background-color: #666;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-left: 4px solid #888;
+}
+
+.close-summary {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 14px;
+    display: block;
+    margin: 0 auto;
+}
+
+.close-summary:hover {
+    background-color: #444;
+}
+
+/* 6 Week Course Cards */
+.course-card {
+    background-color: #666;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.course-info {
+    flex: 1;
+}
+
+.course-title {
+    background-color: #f0f0f0;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.course-details {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.course-duration, .course-price {
+    background-color: #f0f0f0;
+    padding: 5px 8px;
+    font-size: 12px;
+    color: #333;
+}
+
+.course-description {
+    background-color: #888;
+    color: white;
+    padding: 8px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.course-image {
+    width: 120px;
+    height: 90px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* 6 Month Course Grid */
+.course-grid-6month {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.course-card-6month {
+    background-color: #666;
+    padding: 15px;
+}
+
+.course-title-6month {
+    background-color: #f0f0f0;
+    padding: 8px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.course-content-6month {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.course-info-6month {
+    flex: 1;
+}
+
+.course-details-6month {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.course-details-6month .course-duration,
+.course-details-6month .course-price {
+    background-color: #f0f0f0;
+    padding: 5px 8px;
+    font-size: 12px;
+    color: #333;
+}
+
+.course-content-6month .course-image {
+    width: 100px;
+    height: 70px;
+}
+
+.course-content-6month .course-description {
+    background-color: #888;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+/* Purchase Page Styles */
+.purchase-form {
+    display: flex;
+    gap: 40px;
+}
+
+.purchase-left {
+    flex: 1;
+}
+
+.contact-details {
+    background-color: #777;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.purchase-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+.purchase-right {
+    flex: 1;
+}
+
+.payment-header {
+    background-color: #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.payment-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-total {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+}
+
+.purchase-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.purchase-button:hover {
+    background-color: #444;
+}
+
+/* Contact Page Styles */
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info div {
+    margin-bottom: 15px;
+}
+
+.maps-placeholder {
+    background-color: #f0f0f0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Why Us Page Styles */
+.why-us-content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.why-us-section {
+    background-color: #777;
+    color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-box {
+    background-color: #888;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Login Page Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.login-form {
+    background-color: #777;
+    color: white;
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login-form button:hover {
+    background-color: #444;
+}

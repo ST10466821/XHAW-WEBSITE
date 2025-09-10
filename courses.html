@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Website - Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Company Logo/Banner
+        </div>
+        
+        <div class="nav">
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="courses.html" class="nav-btn active">Courses</a>
+            <a href="why-us.html" class="nav-btn">Why us?</a>
+            <a href="contact.html" class="nav-btn">Contact Us</a>
+            <a href="login.html" class="nav-btn">Log In/Sign Up</a>
+            <a href="purchase.html" class="nav-btn purchase-btn">Purchase</a>
+        </div>
+
+        <!-- Summary Sections -->
+        <div id="six-week-summary" class="course-summary" style="display: none;">
+            <div class="summary-header">6 Week Courses Summary</div>
+            <div class="summary-content">
+                <p>Our 6-week intensive courses are designed for quick skill acquisition and immediate application. </p>
+                <ul>
+                    <li>Duration: 6 weeks each</li>
+                    <li>Format: Hybrid (Online + In-person)</li>
+                    <li>Price Range: R500 - R750</li>
+                    <li>Certificate upon completion</li>
+                </ul>
+                <button onclick="hideSummary()" class="close-summary">View All Courses</button>
+            </div>
+        </div>
+
+        <div id="six-month-summary" class="course-summary" style="display: none;">
+            <div class="summary-header">6 Month Courses Summary</div>
+            <div class="summary-content">
+                <p>Our comprehensive 6-month programs provide in-depth knowledge and extensive hands-on experience. Ideal for career transitions and mastery.</p>
+                <ul>
+                    <li>Duration: 6 months each</li>
+                    <li>Format: Hybrid (Online + In-person)</li>
+                    <li>Price Range: R1,000 - R1,500</li>
+                    <li>Industry certification included</li>
+                    <li>Job placement assistance</li>
+                </ul>
+                <button onclick="hideSummary()" class="close-summary">View All Courses</button>
+            </div>
+        </div>
+        
+        <!-- Main Courses Content -->
+        <div id="main-courses" class="courses-grid">
+            <div class="course-category">
+                <div class="category-header clickable" id="six-week" onclick="showSummary('six-week-summary')">6 Week Courses :</div>
+                
+                <div class="course-card">
+                    <div class="course-info">
+                        <div class="course-title">Web Development Basics</div>
+                        <div class="course-details">
+                            <span class="course-duration">Duration: 6 weeks</span>
+                            <span class="course-price">Price: $299</span>
+                        </div>
+                        <div class="course-description">Learn HTML, CSS, and basic JavaScript fundamentals</div>
+                    </div>
+                    <div class="course-image">Course Image</div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-info">
+                        <div class="course-title">JavaScript Fundamentals</div>
+                        <div class="course-details">
+                            <span class="course-duration">Duration: 6 weeks</span>
+                            <span class="course-price">Price: $399</span>
+                        </div>
+                        <div class="course-description">Master JavaScript ES6+, DOM manipulation, and async programming</div>
+                    </div>
+                    <div class="course-image">Course Image</div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-info">
+                        <div class="course-title">CSS & HTML Mastery</div>
+                        <div class="course-details">
+                            <span class="course-duration">Duration: 6 weeks</span>
+                            <span class="course-price">Price: $349</span>
+                        </div>
+                        <div class="course-description">Advanced CSS techniques, responsive design, and HTML5</div>
+                    </div>
+                    <div class="course-image">Course Image</div>
+                </div>
+            </div>
+            
+            <div class="course-category">
+                <div class="category-header clickable" id="six-month" onclick="showSummary('six-month-summary')">6 Month Courses :</div>
+                
+                <div class="course-grid-6month">
+                    <div class="course-card-6month">
+                        <div class="course-title-6month">Full Stack Development</div>
+                        <div class="course-content-6month">
+                            <div class="course-info-6month">
+                                <div class="course-details-6month">
+                                    <span class="course-duration">Duration: 6 months</span>
+                                    <span class="course-price">Price: $2,499</span>
+                                </div>
+                                <div class="course-description">Complete web development stack: React, Node.js, databases</div>
+                            </div>
+                            <div class="course-image">Course Image</div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card-6month">
+                        <div class="course-title-6month">Data Science Bootcamp</div>
+                        <div class="course-content-6month">
+                            <div class="course-info-6month">
+                                <div class="course-details-6month">
+                                    <span class="course-duration">Duration: 6 months</span>
+                                    <span class="course-price">Price: $2,999</span>
+                                </div>
+                                <div class="course-description">Python, machine learning, statistics, and data visualization</div>
+                            </div>
+                            <div class="course-image">Course Image</div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card-6month">
+                        <div class="course-title-6month">Mobile App Development</div>
+                        <div class="course-content-6month">
+                            <div class="course-info-6month">
+                                <div class="course-details-6month">
+                                    <span class="course-duration">Duration: 6 months</span>
+                                    <span class="course-price">Price: $2,299</span>
+                                </div>
+                                <div class="course-description">iOS and Android development with React Native</div>
+                            </div>
+                            <div class="course-image">Course Image</div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card-6month">
+                        <div class="course-title-6month">Cloud Computing</div>
+                        <div class="course-content-6month">
+                            <div class="course-info-6month">
+                                <div class="course-details-6month">
+                                    <span class="course-duration">Duration: 6 months</span>
+                                    <span class="course-price">Price: $1,999</span>
+                                </div>
+                                <div class="course-description">AWS, Azure, Docker, Kubernetes, and DevOps practices</div>
+                            </div>
+                            <div class="course-image">Course Image</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSummary(summaryId) {
+            document.getElementById('main-courses').style.display = 'none';
+            document.getElementById(summaryId).style.display = 'block';
+        }
+
+        function hideSummary() {
+            document.getElementById('main-courses').style.display = 'flex';
+            document.getElementById('six-week-summary').style.display = 'none';
+            document.getElementById('six-month-summary').style.display = 'none';
+        }
+
+        // Check for hash on page load
+        window.onload = function() {
+            if (window.location.hash === '#six-week') {
+                showSummary('six-week-summary');
+            } else if (window.location.hash === '#six-month') {
+                showSummary('six-month-summary');
+            }
+        }
+    </script>
+</body>
+</html>
